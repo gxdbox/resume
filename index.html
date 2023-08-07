@@ -23,7 +23,7 @@
                     <input type="text" id="avatar-url">
                     <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
                 </div>
-                <h1 id="username" >pony</h1>
+                <h1 id="username" >晓东</h1>
                 <h4 id="persona-tag" >java / python / 大数据 / 前端</h4>
             </div>
             <div class="profile info-unit">
@@ -89,32 +89,35 @@
                 <hr>
                 <ul class="stack-list">
                     <li>
-                        <label class="left-label">后端-框架</label><span class="label-value">Spring、Spring Boot、Hibernate、Mybatis、
+                        <label class="left-label">后端-框架</label><span class="label-value">Spring、Spring Boot、springMVC、Hibernate、Mybatis、
                             Flask、Django、quard</span></li>
                     </li>
                     <li>
-                        <label class="left-label">工具</label><span class="label-value">Eclipse、IntelliJ IDEA、VSCode、PyCharm、WebStorm、Navicat、微信开发者工具、
-                            JMeter、Maven、Git、Gradle、cursor、CodeWhisperer
+                        <label class="left-label">后端-中间键</label><span class="label-value">kafka、ZooKeeper、Dubbo</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">后端-基础能力</label><span class="label-value">设计模式Gof、数据结构、算法、jvm、垃圾回收器、并发编程、tdd测试驱动开发、ddd、微服务、linux运维部署及生产排查问题</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">后端-数据库</label><span class="label-value">mysql、elasticSearch、aerospike、redis、图数据库、向量数据库</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">后端-技能</label><span class="label-value">kafka、ZooKeeper、Dubbo、Docker</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">后端-工具</label><span class="label-value">IDEA、VSCode、PyCharm、WebStorm、Navicat、 微信开发者工具、
+                            JMeter、Maven、Git、Gradle、cursor、CodeWhisperer、Eclipse、Docker、k8s
                         </span></li>
-                    </li>
-                    <li>
-                        <label class="left-label">后端-中间键</label><span class="label-value">kafka、ZooKeeper、Dubbo、Docker</span></li>
-                    </li>
-                    <li>
-                        <label class="left-label">基础能力</label><span class="label-value">设计模式Gof、数据结构、算法、jvm、垃圾回收器、并发变成、tdd测试驱动开发、ddd、微服务、linux运维部署及生产排查问题</span></li>
-                    </li>
-                    <li>
-                        <label class="left-label">技能</label><span class="label-value">kafka、ZooKeeper、Dubbo、Docker</span></li>
                     </li>
                     <li>
                         <label class="left-label">前端</label><span class="label-value">react、vue、微信小程序、js、nodejs</span></li>
                     </li>
 
                     <li>
-                        <label class="left-label">数据分析</label><span class="label-value">数据清洗、数据探查、SQL逻辑编写、PdMan业务逻辑梳理</span></li>
+                        <label class="left-label">数据分析</label><span class="label-value">数据清洗、数据探查、SQL逻辑编写、PdMan业务逻辑梳理、hive spark</span></li>
                     </li>
                     <li>
-                        <label class="left-label">AIGC大语言模型</label><span class="label-value">我全都是瞎写的。</span></li>
+                        <label class="left-label">AIGC大语言模型</label><span class="label-value">langchain、chatgpt、向量数据库</span></li>
                     </li>
                 </ul>
             </div>
@@ -123,7 +126,7 @@
                 <h2 class="info-header"><i class="iconfont icon-weixin"></i> <span class="info-title">个人微信</span></h2>
                 <hr>
                 <div class="weixin">
-                    <img src="static/image/weixin.png" alt="">
+                    <img src="static/image/wechat.png" alt="">
 
                 </div>
             </div>
@@ -234,11 +237,13 @@
                         <h3>杭州银行云图计算平台</h3>
                         <dev>
                             <p style="font-weight: bold;">项目描述：</p>
-                            <span>根据历史数据比如设备指纹、交易数据、账户，通过配置规则、指标、模型、决策流、运营审核等手段，实时识别风险交易并进行拦截。</span>
+                            <span>云图是一个全面的图谱解决方案，通过整合数据、提取知识和分析关系网络，帮助客户实现只能决策和应用定制化的业务场景。
+                                整合不同渠道的数据，并提取有用的知识，将数据转换成图谱的形式，理解和分析数据之间的关系，发现隐藏的模式和洞察，并提取有用的知识，用于欺诈检测、风险客户识别、风险评估、客户关系管理等
+                                提供强大的网络分析功能，客户可以利用工具来发现实体与实体之间的关系，识别重要的节点和群组，并进行预测</span>
                         </dev>
                         <dev>
                             <p style="font-weight: bold;">技术架构: </p>
-                            <span>微服务架构 Aerospike Kafka ElasticSearch Aerospike JDK8 bloomfilter、dubbo
+                            <span>hive、spark、微服务架构 Aerospike Kafka ElasticSearch Aerospike JDK8 bloomfilter、dubbo
                                 mysql、zookeeper</span>
                         </dev>
                         <dev>
@@ -246,57 +251,37 @@
                                 <p style="font-weight: bold;">技术剖析:</p>
                             </dev>
                             <ul>
-                                <li>使用 ElasticJob 实现分布式调度任务，负责执行数仓数据同步任务务</li>
-                                <li>使用布隆过滤器进行数据过滤，以减轻服务器压力并防止缓存穿透</li>
-                                <li>利用 Aerospike 实现缓存服务和分布式锁</li>
-                                <li>使用 Kafka 实现消息队列，以分摊数据压力，实现生产者和消费者模式，并实现逻辑解耦</li>
-                                <li>单点登录：sso一次登录、多系统穿梭，提升用户满意度</li>
-                                <li>风险大盘查询优化、Mysql优化，性能提升80%</li>
-                                <li>修补名单数据设计缺陷，重构代码</li>
-                                <li>处理生产问题，从成本、时间、风险综合考虑选择方案</li>
-                            </ul>
-                        </dev>
-                        <dev>
-                            <dev>
-                                <p style="font-weight: bold;">成长与收获:</p>
-                            </dev>
-                            <ul>
-                                <li>带领实习生共同完成项目，分配任务、code reviewr，带实习生成长，高效完成任务</li>
-                                <li>在公司和客户的双重压力下，处理好双方需求，如期完成上线，保证交付质量</li>
+                                <li>使用滑动窗口算法实现在高并发下的熔断、限流、降级</li>
+                                <li>利用eventBus事件驱动领域的设计思想，解耦组件、模块、服务，通过订阅发布模式进行通信，打造一个可为维护性、可扩展、高灵活的系统</li>
+                                <li>利用工厂模式和策略模式，设计图谱，代码简洁、扩展性强、可维护性强</li>
+                                <li>在全局锁且AS原子性的情况，指标计算错误，生产问题排查定位</li>
+                                <li>将复杂且难以执行的 SQL查询任务，通过任务分解的思想，拆分为多个最小执行单元，提高查询效率，也便于后期维护</li>
+                                <li>利用抽象思维，提炼公共SQL，增加复用性和灵活性，避免重复编写相似的SQL代码，提高开发效率</li>
+                                <li>数据清洗、脏数据分析、分区优化、临时表设计、缺失值筛选、异常值判断、关联词探查等方式，提高数据的准确性</li>
+                                <li>通过pdman等可视化方式为对行方老师讲解sql之间的关联逻辑，降低了杭方老师理解的门槛</li>
                             </ul>
                         </dev>
                     </li>
                 </ul>
             </div>
-            <div class="trophy info-unit">
-                <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title">奖项与证书</span></h2>
-                <hr>
-                <ul class="experience-list">
-                    <li>
-                        <h3>小学生作文二等奖</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam。
-                        </p>
-                    </li> 
-                    <li>
-                        <h3>曾获统一冰红茶“再来一瓶”奖</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam。
-                        </p>
-                    </li> 
-                    <li>
-                        <h3>这一行也是为了凑版面</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam。
-                        </p>
-                    </li>                     
-            </div>
             <div class="aboutme info-unit right-paragraph">
                 <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title">自我评价</span></h2>
                 <hr>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                <ul>
+                    <ul>
+                        <p style="font-weight: bold;">兴趣爱好： </p>
+                        <li>阅读与写作，喜欢技术博客，关注国外技术动态，积极与时俱进</li>
+                        <li>爬山、跑步、冷水浴，注重保持身体健康</li>
+                        <li>音乐与吉他，it太费脑，用音乐放松</li>
+                    </ul>
+                    <ul>
+                        <p style="font-weight: bold;"> 个人特点: </p>
+                        <li>强烈的好奇心，喜欢深入研究技术难题，并寻求创新的解决方案</li>
+                        <li>具备良好的动手能力，坚持每天写代码和解决算法问题的习惯</li>
+                        <li>适应能力强，学习能力强、抗压能力强，这多亏了多年的项目实施经验，一两个月就得换项目、出差，在困境中成长</li>
+                        <li>擅长沟通与协调，通过多年驻场开发经验，磨练了良好的沟通技巧和人际关系管理能力</li>
+                    </ul>
+                </ul>
             </div>
         </div>
     </div>
