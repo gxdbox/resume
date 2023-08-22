@@ -331,7 +331,6 @@
                                 <li>微服务架构：eureka做服务注册发现、hystrax熔断降级等</li>
                                 <li>分布式：nginx之 OpenResty  做负载均衡，分摊请求压力；token  分布式会话，后期可用性可强；分布式事务 RocketMq ，库存流水状态，保证数据最终一致性</li>
                                 <li>多级缓存，TPS  提升十倍：redis  缓存商品详情页；guava  本地热点缓存；lua  脚本访问商品详情页</li>
-                                <li>全页面静态化：将动态请求和静态资源请求通过 phantomJs  静态化，部署到 CDN</li>
                                 <li>RocketMq  消息队列： 读写分离，利用 RocketMQ  异步扣减库存</li>
                                 <li>削峰：a、判断校验由秒杀令牌接口完成，与下单接口分离；b、秒杀大闸，限定流量；c、本地队列泄洪</li>
                                 <li>限流：Guava之 RateLimiter ，验证码验证限流</li>
