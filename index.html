@@ -167,7 +167,7 @@
                     <li>
                         <h3>同盾科技</h3>
                         <dev>
-                            <p style="font-weight: bold;">职位：项目管理、技术专家</p>
+                            <p style="font-weight: bold;">职位：技术专家</p>
                         </dev>
                         <dev>
                             <p style="font-weight: bold;">工作时间：2021年8月-至今</p>
@@ -238,68 +238,58 @@
                 <hr>
                 <ul class="experience-list">
                     <li>
-                        <h3>苏州农商交易反欺诈(以及信贷)</h3>
+                        <h3>智能风控类：交易反欺诈/决策引擎信贷版/云图知识图谱</h3>
                         <div>
                             <p style="font-weight: bold;">项目描述：</p>
                             <span>根据历史数据比如设备指纹、交易数据、账户，通过配置规则、指标、模型、决策流、运营审核等方式，实时识别风险交易并进行拦截。</span>
                         </div>
                         <div>
                             <p style="font-weight: bold;">技术架构: </p>
-                            <span>微服务架构 Aerospike Kafka ElasticSearch Aerospike JDK8 bloomfilter、dubbo
-                            mysql、zookeeper</span>
+                            <span>微服务架构 Aerospike, Kafka, ElasticSearch, JDK8, bloomfilter, dubbo, mysql, zookeeper，hive, spark hadoop</span>
                         </div>
                         <div>
                             <div>
                                 <p style="font-weight: bold;">技术剖析:</p>
                             </div>
                             <ul>
-                                <li>使用 ElasticJob 实现分布式调度任务，负责执行数仓数据同步任务</li>
-                                <li>使用布隆过滤器进行数据过滤，以减轻服务器压力并防止缓存穿透</li>
-                                <li>利用 Aerospike 实现缓存服务和分布式锁</li>
-                                <li>使用 Kafka 实现消息队列，以分摊数据压力，实现生产者和消费者模式，并实现逻辑解耦</li>
-                                <li>单点登录：sso一次登录、多系统穿梭，提升用户满意度</li>
-                                <li>风险大盘查询优化、Mysql优化，性能提升80%</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <div>
-                                <p style="font-weight: bold;">成长与收获:</p>
-                            </div>
-                            <ul>
-                                <li>带领实习生共同完成项目，分配任务、code reviewr，带实习生成长，高效完成任务</li>
-                                <li>在公司和客户的双重压力下，处理好双方需求，如期完成上线，保证交付质量</li>
+                                <li>kafka: 用作消息队列，分摊数据压力，观察者模式实现逻辑解耦</li>
+                                <li>eventBus：事件驱动领域的设计思想，解耦组件、模块、服务，通过订阅发布模式进行通信，打造一个可为维护性、可扩展、高灵活的系统</li>
+                                <li>知识图谱：工厂模式和策略模式，设计图谱，代码简洁、扩展性强、可维护性强</li>
+                                <li>熔断限流：用滑动窗口算法实现</li>
+                                <li>ElasticJob： 分布式调度任务，负责执行数仓数据同步任务</li>
+                                <li>布隆过滤器：数据过滤，防止缓存穿透，减轻服务器压力</li>
+                                <li>Nosql数据库Aerospike： 实现缓存服务和分布式锁</li>
+                                <li>sso单点登录：一次登录、多系统免密穿</li>
+                                <li>mysql性能优化：从业务、mysql、缓存、定时任务多维度优化，性能提升90%</li>
                             </ul>
                         </div>
                     </li>
                     <li>
-                        <h3>杭州银行云图计算平台</h3>
+                        <h3>电子商务类：跨境电商-速卖通</h3>
                         <div>
-                            <p style="font-weight: bold;">项目描述：</p>
-                            <span>云图是一个全面的图谱解决方案，通过整合数据、提取知识和分析关系网络，帮助客户实现智能决策和应用定制化的业务场景。
-                                整合不同渠道的数据，并提取有用的知识，将数据转换成图谱的形式，理解和分析数据之间的关系，发现隐藏的模式和洞察，并提取有用的知识，用于欺诈检测、风险客户识别、风险评估、客户关系管理等
-                                提供强大的网络分析功能，客户可以利用工具来发现实体与实体之间的关系，识别重要的节点和群组，并进行预测</span>
+                            <p style="font-weight: bold;">项目描述：海外版的淘宝，面向全球用户的电子商务平台，随着跨境业务的增长，原先的架构设计无法满足需求</p>
+                            <span>有幸见证了并参与阿里技术技术专家微服拆分与设计全流程，本人负责代码开发，性能测试及问题排查解决</span>
                         </div>
                         <div>
                             <p style="font-weight: bold;">技术架构: </p>
-                            <span>hive、spark、微服务架构 Aerospike Kafka ElasticSearch Aerospike JDK8 bloomfilter、dubbo
-                                mysql、zookeeper</span>
+                            <span>SpringCloud系列组件 + HSF</span>
                         </div>
                         <div>
                             <div>
                                 <p style="font-weight: bold;">技术剖析:</p>
                             </div>
                             <ul>
-                                <li>使用滑动窗口算法实现在高并发下的熔断、限流、降级</li>
-                                <li>利用eventBus事件驱动领域的设计思想，解耦组件、模块、服务，通过订阅发布模式进行通信，打造一个可为维护性、可扩展、高灵活的系统</li>
-                                <li>利用工厂模式和策略模式，设计图谱，代码简洁、扩展性强、可维护性强</li>
-                                <li>在全局锁且AS原子性的情况，指标计算错误，生产问题排查定位</li>
-                                <li>利用抽象思维，提炼公共SQL，增加复用性和灵活性，避免重复编写相似的SQL代码，提高开发效率</li>
-                                <li>数据清洗、脏数据分析、分区优化、临时表设计、缺失值筛选、异常值判断、关联词探查等方式，提高数据的准确性</li>
+                                <li>Nacos:服务注册与发现，动态配置，实时感知服务的变化并提供服务的动态调用能力。</li>
+                                <li>Nginx:反向代理，用于负载均衡和高并发请求处理</li>
+                                <li>Config Server：分布式配置文件管理</li>
+                                <li>Gateway：网关组件，提供了灵活的路由配置和过滤器链的定义</li>
+                                <li>Bus：实现异步通信和事件驱动的机制，用于在微服务之间进行消息的发布、订阅和传递</li>
+                                <li>sentinal:熔断降级框架,保护分布式系统免受流量过载、故障和资源限制的影响</li>
                             </ul>
                         </div>
                     </li>
                     <li>
-                        <h3>飞猪接送机（司机抢单）</h3>
+                        <h3>网约车类：飞猪接送机（司机抢单）</h3>
                         <div>
                             <span>项目描述：专门给提供司机抢单的app,类似滴滴</span>
                             <div>客户端类型：Andriod，IOS，H5，pc_web	</div>
@@ -313,6 +303,8 @@
                                 <p style="font-weight: bold;">技术剖析:</p>
                             </div>
                             <ul>
+                                <li>用Ribbon进行负载均衡</li>
+                                <li>利用Hystrix限流和熔断</li>
                                 <li>运维部署，搭建redis，实现分布式锁、异步队列</li>
                                 <li>调用第三方工具：微信支付，阿里支付，百度地图，face++等</li>
                                 <li>采用 quartz 进行定时更新</li>
@@ -322,20 +314,21 @@
                         </div>
                     </li>
                     <li>
-                        <h3>民宿采购通电商系统</h3>
+                        <h3>民宿电商类：民宿采购通电商系统</h3>
                         <div>
                             <span>项目描述：民宿采购通，B2C类型的新零售电商系统；为民宿主提供一站式采购的小程序</span>
-                            <div>工作职责： 秒杀、支付、商品、购物车模块，运维</div>
+                            <div>工作职责： 秒杀、商品、购物车模块，运维</div>
                         </div>
                         <div>
                             <p style="font-weight: bold;">技术架构: </p>
-                            <span>springboot guava mybtis mysql redis OpenResty RocketMQ docker swagger shiro； 前端：Vue phantomJs lua CDN  微信小程序 H5</span>
+                            <span>eureka、springboot guava mybtis mysql redis OpenResty RocketMQ docker swagger shiro； 前端：Vue phantomJs lua CDN  微信小程序 H5</span>
                         </div>
                         <div>
                             <div>
                                 <p style="font-weight: bold;">技术剖析:</p>
                             </div>
                             <ul>
+                                <li>微服务架构：eureka做服务注册发现、hystrax熔断降级等</li>
                                 <li>分布式：nginx之 OpenResty  做负载均衡，分摊请求压力；token  分布式会话，后期可用性可强；分布式事务 RocketMq ，库存流水状态，保证数据最终一致性</li>
                                 <li>多级缓存，TPS  提升十倍：redis  缓存商品详情页；guava  本地热点缓存；lua  脚本访问商品详情页</li>
                                 <li>全页面静态化：将动态请求和静态资源请求通过 phantomJs  静态化，部署到 CDN</li>
