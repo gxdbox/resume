@@ -167,7 +167,7 @@
                     <li>
                         <h3>同盾科技</h3>
                         <dev>
-                            <p style="font-weight: bold;">职位：技术专家</p>
+                            <p style="font-weight: bold;">职位：后端研发</p>
                         </dev>
                         <dev>
                             <p style="font-weight: bold;">工作时间：2021年8月-至今</p>
@@ -175,8 +175,7 @@
                         <dev>
                             <p style="font-weight: bold;">工作内容：</p>
                             <ul>
-                                <li>项目管理: 客户需求分析、评估工时、制定项目计划，分派任务，协调资源，把控项目进度与成本，控制风险</li>
-                                <li>技术开发：核心需求开发、方案评审、架构设计、技术咨询</li>
+                                <li>后端开发：核心需求开发、方案评审、建模领域设计，数据库表设计，技术设计、tdd测试</li>
                                 <li>运维部署：性能压测、系统上线、生产问题排查、定位及修复</li>
                                 <li>新技术探查：代码审查，提高团队整体技术水平</li>
                             </ul>
@@ -185,7 +184,7 @@
                     <li>
                         <h3>阿里巴巴</h3>
                         <dev>
-                            <p style="font-weight: bold;">职位：技术经理</p>
+                            <p style="font-weight: bold;">职位：后端开发</p>
                         </dev>
                         <dev>
                             <p style="font-weight: bold;">工作时间：2019年1月-2021年8月</p>
@@ -193,8 +192,7 @@
                         <dev>
                             <p style="font-weight: bold;">工作内容：</p>
                             <ul>
-                                <li>技术开发：需求分析，架构设计，方案评审、核心需求开发、性能压测、线上问题定位与排查</li>
-                                <li>分派任务、code reviewer</li>
+                                <li>需求分析，方案评审、核心需求开发、单元测试，性能压测、线上问题定位与排查</li>
                             </ul>
                         </dev>
                     </li>
@@ -252,34 +250,34 @@
                                 <p style="font-weight: bold;">技术剖析:</p>
                             </div>
                             <ul>
-                                <li>kafka: 用作消息队列，分摊数据压力，观察者模式实现逻辑解耦</li>
+                                <li>kafka: 用作消息队列，削峰填谷，观察者模式实现逻辑解耦</li>
                                 <li>eventBus：事件驱动领域的设计思想，解耦组件、模块、服务，通过订阅发布模式进行通信，打造一个可为维护性、可扩展、高灵活的系统</li>
                                 <li>知识图谱：工厂模式和策略模式，设计图谱，代码简洁、扩展性强、可维护性强</li>
                                 <li>熔断限流：用滑动窗口算法实现</li>
                                 <li>ElasticJob： 分布式调度任务，负责执行数仓数据同步任务</li>
-                                <li>布隆过滤器：数据过滤，防止缓存穿透，减轻服务器压力</li>
+                                <li>布隆过滤器：数据过滤，减轻服务器压力，防止缓存穿透</li>
                                 <li>Nosql数据库Aerospike： 实现缓存服务和分布式锁</li>
                                 <li>sso单点登录：一次登录、多系统免密穿</li>
-                                <li>mysql性能优化：从业务、mysql、缓存、定时任务多维度优化，性能提升90%</li>
+                                <li>mysql性能优化：从业务、索引、缓存多维度优化，性能提升90%</li>
                             </ul>
                         </div>
                     </li>
                     <li>
                         <h3>电子商务类：跨境电商-速卖通</h3>
                         <div>
-                            <p style="font-weight: bold;">项目描述：海外版的淘宝，面向全球用户的电子商务平台，随着跨境业务的增长，原先的架构设计无法满足需求</p>
+                            <p style="font-weight: bold;">项目描述：海外版的淘宝，面向全球用户的电子商务平台，随着跨境业务的增长，原先的架构无法满足需求</p>
                             <span>有幸见证了并参与阿里技术技术专家微服拆分与设计全流程，本人负责代码开发，性能测试及问题排查解决</span>
                         </div>
                         <div>
                             <p style="font-weight: bold;">技术架构: </p>
-                            <span>SpringCloud系列组件 + HSF</span>
+                            <span>SpringCloud系列组件 + HSF + rocketMq</span>
                         </div>
                         <div>
                             <div>
                                 <p style="font-weight: bold;">技术剖析:</p>
                             </div>
                             <ul>
-                                <li>Nacos:服务注册与发现，动态配置，实时感知服务的变化并提供服务的动态调用能力。</li>
+                                <li>Nacos: 服务注册与发现，动态配置，实时感知服务的变化并提供服务的动态调用能力。</li>
                                 <li>Nginx:反向代理，用于负载均衡和高并发请求处理</li>
                                 <li>Config Server：分布式配置文件管理</li>
                                 <li>Gateway：网关组件，提供了灵活的路由配置和过滤器链的定义</li>
@@ -303,13 +301,12 @@
                                 <p style="font-weight: bold;">技术剖析:</p>
                             </div>
                             <ul>
-                                <li>用Ribbon进行负载均衡</li>
-                                <li>利用Hystrix限流和熔断</li>
-                                <li>运维部署，搭建redis，实现分布式锁、异步队列</li>
                                 <li>调用第三方工具：微信支付，阿里支付，百度地图，face++等</li>
-                                <li>采用 quartz 进行定时更新</li>
-                                <li>采用个推向司机推送消息、阿里云短信登录</li>
-                                <li>利用 nginx 做负载均衡</li>
+                                <li>Hystrix：利用限流和熔断</li>
+                                <li>Ribbon：客户端负载均衡，高性能低延时</li>
+                                <li>Quartz:定时执行任务</li>
+                                <li>Redis: 会话缓存，消息队列</li>
+                                <li>个推：策略性地推送消息，实时数据分析</li>
                             </ul>
                         </div>
                     </li>
@@ -317,23 +314,22 @@
                         <h3>民宿电商类：民宿采购通电商系统</h3>
                         <div>
                             <span>项目描述：民宿采购通，B2C类型的新零售电商系统；为民宿主提供一站式采购的小程序</span>
-                            <div>工作职责： 秒杀、商品、购物车模块，运维</div>
+                            <div>工作职责： 负责订单、支付、库存等模块开发、测试、运维部署、解决生产问题</div>
                         </div>
                         <div>
                             <p style="font-weight: bold;">技术架构: </p>
-                            <span>eureka、springboot guava mybtis mysql redis OpenResty RocketMQ docker swagger shiro； 前端：Vue phantomJs lua CDN  微信小程序 H5</span>
+                            <span>springboot es guava mybtis mysql redis OpenResty RocketMQ docker swagger shiro； 前端：Vue phantomJs lua CDN  微信小程序 H5</span>
                         </div>
                         <div>
                             <div>
                                 <p style="font-weight: bold;">技术剖析:</p>
                             </div>
                             <ul>
-                                <li>微服务架构：eureka做服务注册发现、hystrax熔断降级等</li>
-                                <li>分布式：nginx之 OpenResty  做负载均衡，分摊请求压力；token  分布式会话，后期可用性可强；分布式事务 RocketMq ，库存流水状态，保证数据最终一致性</li>
-                                <li>多级缓存，TPS  提升十倍：redis  缓存商品详情页；guava  本地热点缓存；lua  脚本访问商品详情页</li>
+                                <li>支付模块：微信支付、阿里支付等，聚合支付、融合支付、解决安全相关的问题</li>
+                                <li>订单模块：分布式事务、分布式锁、mysql分区表、状态机模式优雅解决订单状态、解决重复下单、高并发情况下冲突解决</li>
+                                <li>nginx+lua: 网关负载均衡</li>
+                                <li>缓存：CDN缓存静态页面，布隆过滤防止缓存穿透，redis缓存商品详情页，本地用guava缓存</li>
                                 <li>RocketMq  消息队列： 读写分离，利用 RocketMQ  异步扣减库存</li>
-                                <li>削峰：a、判断校验由秒杀令牌接口完成，与下单接口分离；b、秒杀大闸，限定流量；c、本地队列泄洪</li>
-                                <li>限流：Guava之 RateLimiter ，验证码验证限流</li>
                             </ul>
                         </div>
                     </li>
