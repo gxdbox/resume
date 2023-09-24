@@ -349,6 +349,58 @@
                             </ul>
                         </div>
                     </li>
+                    <li>
+                        <h3>AIGC: translator翻译工具</h3>
+                        <div>
+                            <span><b>项目描述：</b>传入一本pdf英文版小说，通过openai一键翻译成中文版本，并支持pdf/markdown格式下载</span>
+                            <div><strong>市场分析：</strong></div>
+                            <ul>
+                                <li>人工翻译价格昂贵，价差在30倍左右</li>
+                                <li>传统在线翻译网站，存在数据安全隐患</li>
+                                <li>传统在线不支持表格、图片等多格式翻译</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p style="font-weight: bold;">技术架构: </p>
+                            <span>python3.10,langchain,prompt,gradio,huggingface,pdfplumber</span>
+                        </div>
+                        <div>
+                            <div>
+                                <p style="font-weight: bold;">功能点：</p>
+                            </div>
+                            <ul>
+                                <li>在线上传文件，python解析，拆分文件，以page为单位，调用openai进行翻译再写入并支持多种格式输出</li>
+                                <li>openai大模型-chatgpt3.5-turbo，设定system role，编辑prompt</li>
+                                <li>用gradio实现图形化界面</li>
+                                <li>支持多语言翻译</li>
+                                <li>pdfplumber开源库文件解析</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>AIGC: 家访客服聊天机器人</h3>
+                        <div>
+                            <span><b>项目描述：</b>机器人智能客服，收集客户需求，将需求存入数据库，用于后期人工跟进</span>
+                            <div><strong>市场分析：</strong> 家访有很多的定制化需求，比如窗帘定制，需要大量的人工客服，还需要培训，时间和财务成本高</div>
+                        </div>
+                        <div>
+                            <p style="font-weight: bold;">技术架构: </p>
+                            <span>python3.10,langchain,prompt,memory, functioncall, chroma, gradio, agent, embedding</span>
+                        </div>
+                        <div>
+                            <div>
+                                <p style="font-weight: bold;">功能点：</p>
+                            </div>
+                            <ul>
+                                <li>通过Python及chatgpt爬取窗帘相关数据，以及真人实战文档，各个公司产品数据</li>
+                                <li>通过embedding向量化数据，并存入chromo数据库</li>
+                                <li>通过langchain的memory记录上下文，prompt组装提示词</li>
+                                <li>gradio提供图形化界面</li>
+                                <li>查询先从chroma，如果没有再调用openai，如果没有再调用agent，再存入chroma向量数据库</li>
+                                <li>定时任务，将机器人收集的定制化订单分派到人工客服，进行一对一确认</li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </div>
 
